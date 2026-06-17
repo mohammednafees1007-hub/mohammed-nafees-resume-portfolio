@@ -1,6 +1,8 @@
 from pathlib import Path
 
-from reportlab.lib.pagesizes import letter
+from pypdf import PdfReader
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import inch
 from reportlab.platypus import BaseDocTemplate, Frame, PageTemplate, Paragraph, Spacer
@@ -11,22 +13,25 @@ TXT = ROOT / "Mohammed_Nafees_H_ATS_Resume.txt"
 PDF = ROOT / "Mohammed_Nafees_H_ATS_Resume.pdf"
 
 
-def para_style(name, size, leading, bold=False, after=0):
+def para_style(name, size, leading, bold=False, after=0, color=colors.black):
     return ParagraphStyle(
         name,
         fontName="Helvetica-Bold" if bold else "Helvetica",
         fontSize=size,
         leading=leading,
         spaceAfter=after,
+        textColor=color,
+        wordWrap="LTR",
     )
 
 
 styles = {
-    "name": para_style("name", 14.2, 15.2, True, 1.2),
-    "contact": para_style("contact", 7.2, 8.2, False, 0.8),
-    "section": para_style("section", 8.1, 9.1, True, 1.2),
-    "body": para_style("body", 7.0, 8.0, False, 0.6),
-    "bold": para_style("bold", 7.1, 8.0, True, 0.5),
+    "name": para_style("name", 16.4, 17.8, True, 1.6, colors.HexColor("#111827")),
+    "headline": para_style("headline", 8.8, 9.8, True, 1.4, colors.HexColor("#111827")),
+    "contact": para_style("contact", 7.6, 8.5, False, 0.8, colors.HexColor("#1f2937")),
+    "section": para_style("section", 9.0, 10.0, True, 1.4, colors.HexColor("#0f766e")),
+    "body": para_style("body", 7.85, 8.95, False, 0.8, colors.HexColor("#111827")),
+    "bold": para_style("bold", 8.0, 9.0, True, 0.7, colors.HexColor("#111827")),
 }
 
 
@@ -36,9 +41,7 @@ sections = {
     "TECHNICAL SKILLS",
     "EXPERIENCE",
     "PROJECTS",
-    "LINKEDIN PUBLIC PROOF",
     "LEADERSHIP",
-    "ENGINEERING HIGHLIGHTS",
 }
 
 
@@ -54,11 +57,11 @@ def p(text, style_name="body"):
 def build():
     doc = BaseDocTemplate(
         str(PDF),
-        pagesize=letter,
-        leftMargin=0.48 * inch,
-        rightMargin=0.48 * inch,
-        topMargin=0.4 * inch,
-        bottomMargin=0.38 * inch,
+        pagesize=A4,
+        leftMargin=0.42 * inch,
+        rightMargin=0.42 * inch,
+        topMargin=0.35 * inch,
+        bottomMargin=0.35 * inch,
         title="Mohammed Nafees H ATS Resume",
         author="Mohammed Nafees H",
     )
@@ -73,22 +76,26 @@ def build():
             continue
         if index == 0:
             story.append(p(line, "name"))
+        elif index == 1:
+            story.append(p(line, "headline"))
         elif line in sections:
-            story.append(Spacer(1, 1.6))
+            story.append(Spacer(1, 2.0))
             story.append(p(line, "section"))
         elif line.startswith("- "):
             story.append(p(line, "body"))
-        elif ":" in line and index < 6:
+        elif ":" in line and index < 7:
             story.append(p(line, "contact"))
-        elif " - " in line and not line.startswith("GitHub"):
+        elif (" - " in line or " | " in line) and not line.startswith("GitHub"):
             story.append(p(line, "bold"))
         else:
             story.append(p(line, "body"))
 
     doc.build(story)
+    pages = len(PdfReader(str(PDF)).pages)
+    if pages != 1:
+        raise SystemExit(f"Expected one-page resume, generated {pages} pages")
     print(PDF)
 
 
 if __name__ == "__main__":
     build()
-

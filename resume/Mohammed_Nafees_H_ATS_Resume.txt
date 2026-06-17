@@ -1,12 +1,12 @@
 MOHAMMED NAFEES H
-Robotics & AI Engineer | Robotics Software | Embedded Robotics | Computer Vision
+Robotics & AI Engineering Student | Robotics Software | Embedded Systems | Computer Vision
 Phone: +91 962-946-1267 | Email: mohammednafees1007@gmail.com
 Location: Kumbakonam, Tamil Nadu, India
-LinkedIn: https://www.linkedin.com/in/mohammed-nafees-h
+LinkedIn: https://www.linkedin.com/in/mohammed-nafees-h-7b3377306
 GitHub: https://github.com/mohammednafees1007-hub
 
 SUMMARY
-B.Tech Robotics & Artificial Intelligence student at SASTRA University, Class of 2028, focused on robotics software, embedded robotics, autonomous systems, and AI/computer vision. Hands-on experience across ROS 2 workflows, Python/C++ robotics programming, Arduino and Raspberry Pi hardware, sensors, motor control, computer vision, and AI backend pipelines. Built a 4x4 Arduino-Python autonomous navigation robot, a YOLOv8x/Keras fruit quality grading system, and a YOLO/OpenCV/BLIP image-analysis backend.
+B.Tech Robotics & Artificial Intelligence student at SASTRA University, Class of 2028, focused on robotics software, embedded systems, autonomous navigation, and AI/computer vision. Hands-on experience across ROS 2 workflows, Python/C++ robotics programming, Arduino and Raspberry Pi hardware, sensors, motor control, OpenCV, YOLOv8, Keras, and BLIP-based AI pipelines. Built public GitHub projects covering grid navigation, fruit quality detection, and image-analysis backends.
 
 EDUCATION
 SASTRA Deemed University - B.Tech, Robotics & Artificial Intelligence
@@ -15,17 +15,17 @@ Aug 2024 - May 2028 | Tamil Nadu, India
 TECHNICAL SKILLS
 Robotics Software: ROS 2, Python, C/C++, Linux/Ubuntu, Git, robot integration, A* path planning, controls basics, sensor debugging
 Embedded Hardware: Arduino, ESP32, STM32, Raspberry Pi 5, Raspberry Pi Zero 2 W, Pi Camera, GPIO, motor drivers, encoders, IR sensors
-Communication and Sensors: I2C, UART, LiDAR, IMU, camera sensors, serial communication, sensor/actuator interfacing
-AI and Computer Vision: OpenCV, YOLOv8, Ultralytics, TensorFlow/Keras, CLIP, BLIP, Hugging Face Transformers, image classification, object detection, scene captioning
-Hardware Lab: soldering, schematic reading, hardware bring-up, wiring, component evaluation, procurement coordination
-Tools: VS Code, Ubuntu 24.04, CoppeliaSim, Fusion 360, EasyEDA/KiCad basics
+Sensors and Communication: I2C, UART, LiDAR, IMU, camera sensors, serial communication, sensor/actuator interfacing
+AI and Computer Vision: OpenCV, YOLOv8, Ultralytics, TensorFlow/Keras, CLIP, BLIP, Hugging Face Transformers, image classification, object detection
+Hardware Lab and Tools: soldering, schematic reading, hardware bring-up, wiring, component evaluation, procurement coordination, VS Code, CoppeliaSim, Fusion 360, EasyEDA/KiCad basics
 
 EXPERIENCE
-Industrial Robotics Engineering Project - Robotics Engineering Contributor
-Technologies: ROS 2, Controls, Embedded Integration
-- Contribute to ROS 2 based robotics workflows, controls-oriented development, embedded integration, sensor/actuator evaluation, and hardware coordination under professional constraints.
-- Coordinate component identification, evaluation, and procurement support for a project hardware budget of approximately six figures.
-- Work across robotics software, electronics, and mechanical constraints for deployment-oriented industrial robotics tasks.
+Hardware Software Specialist | Confidential Industrial Robotics Project | Part-time
+Mar 2026 - Present | Thanjavur, Tamil Nadu, India | On-site
+Project details withheld due to signed confidentiality / NDA obligations.
+- Contribute to an industry-level robotics project involving ROS 2-based workflows, controls-oriented development, embedded integration, and system-level coordination.
+- Support robotics software, hardware coordination, sensor/actuator evaluation, and practical deployment-focused engineering in a professional setting.
+- Coordinate component identification, evaluation, and procurement support for a project hardware budget of approximately six figures while maintaining strict confidentiality.
 
 PROJECTS
 Hadi Al Hajatron - Arduino, Python, IR Sensors, Encoders, A* Path Planning
@@ -46,17 +46,6 @@ Quadruped Robot - Inverse Kinematics, Robotics Controls, Embedded Integration
 Schooling-Era Robotics Projects - Arduino, Sensors, Motor Drivers
 - Prototyped early Arduino robotics systems involving sensors, motor drivers, wiring, control experiments, and debugging.
 
-LINKEDIN PUBLIC PROOF
-- Public LinkedIn headline: Robotics & AI Engineer | ROS 2 | Embedded Systems | Computer Vision | Autonomous Robotics | Raspberry Pi | OpenCV | Python.
-- Public post theme: exploring Embodied AI with Raspberry Pi, ROS 2, sensors, and robotics projects.
-- Public Hadi post theme: grid-based exploration and navigation bot with Arduino motor control, encoder movement, IR sensing, live Python mapping, frontier exploration, A* path planning, and JSON map storage.
-
 LEADERSHIP
 Robotics Club Member - SASTRA Deemed University
-- Active in robotics learning, project building, experimentation, and applied technical development.
-
-ENGINEERING HIGHLIGHTS
-- Practical builder across robotics software, embedded electronics, mechanical integration, AI models, and user-facing tools.
-- Comfortable with Linux robotics environments, hardware bring-up, sensor debugging, serial communication, rapid prototyping, and deployment-oriented project work.
-- Strong project evidence through public GitHub repositories, runnable local applications, backend pipelines, and real hardware workflows.
-
+- Active in robotics learning, project building, experimentation, hardware bring-up, sensor debugging, and applied technical development.
