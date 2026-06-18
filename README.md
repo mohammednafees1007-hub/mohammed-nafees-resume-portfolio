@@ -2,11 +2,12 @@
 
 Dedicated resume repository for Mohammed Nafees H.
 
-This repo is intentionally separate from the GitHub profile README repository. It keeps the current one-page ATS resume, the plain-text resume source, and the generator used to rebuild the PDF.
+This repo is intentionally separate from the GitHub profile README repository. It keeps the current one-page ATS resume, a styled Word resume, the plain-text resume source, and the generators used to rebuild the documents.
 
 ## Resume
 
 - [Download ATS Resume PDF](resume/Mohammed_Nafees_H_ATS_Resume.pdf)
+- [Download Styled Word Resume](resume/Mohammed_Nafees_H_Styled_Resume.docx)
 - [Read Plain Text Resume](resume/Mohammed_Nafees_H_ATS_Resume.txt)
 
 ## Profile Links
