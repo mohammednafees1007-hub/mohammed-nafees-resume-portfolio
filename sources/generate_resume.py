@@ -84,6 +84,6 @@ r=footer.add_run('Mohammed Nafees H  |  November 2026  |  ');r.font.size=Pt(8);r
 f=OxmlElement('w:fldSimple');f.set(qn('w:instr'),'PAGE');footer._p.append(f)
 D.core_properties.title='Mohammed Nafees H Robotics and AI Resume';D.core_properties.author='Mohammed Nafees H'
 from pathlib import Path
-OUTPUT_DIR = Path(__file__).resolve().parent.parent / 'docx'
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / 'Resume' / 'DOCX'
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 D.save(OUTPUT_DIR / 'Mohammed_Nafees_H_Resume_November_2026.docx')

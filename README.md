@@ -8,18 +8,19 @@ This repository maintains **exactly two résumé versions**: a comprehensive mai
 
 | Version | PDF | Editable Word | Plain text |
 | --- | --- | --- | --- |
-| Main comprehensive · 2 pages | [PDF](pdf/Mohammed_Nafees_H_Resume_November_2026.pdf) | [DOCX](docx/Mohammed_Nafees_H_Resume_November_2026.docx) | [TXT](text/Mohammed_Nafees_H_Resume_November_2026.txt) |
-| General single page · 1 page | [PDF](pdf/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.pdf) | [DOCX](docx/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.docx) | [TXT](text/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.txt) |
+| Main comprehensive · 2 pages | [PDF](Resume/PDF/Mohammed_Nafees_H_Resume_November_2026.pdf) | [DOCX](Resume/DOCX/Mohammed_Nafees_H_Resume_November_2026.docx) | [TXT](Resume/Text/Mohammed_Nafees_H_Resume_November_2026.txt) |
+| General single page · 1 page | [PDF](Resume/PDF/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.pdf) | [DOCX](Resume/DOCX/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.docx) | [TXT](Resume/Text/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.txt) |
 
 Both versions link the industrial experience heading to the [LinkedIn experience post](https://www.linkedin.com/feed/update/urn:li:activity:7444209303684640768/). Industrial descriptions remain non-proprietary.
 
 ## Layout
-- `pdf/`: two finished PDFs.
-- `docx/`: two editable Word documents.
-- `text/`: matching text versions.
+- `Resume/PDF/`: two finished PDFs.
+- `Resume/DOCX/`: two editable Word documents.
+- `Resume/Text/`: matching text versions.
 - `sources/generate_resume.py`: comprehensive Word-document source.
 - `sources/generate_single_page_resume.py`: general one-page Word-document source.
 - `requirements.txt`: Python dependency.
+- `Tailored Resume/`: future company-specific versions, organized as `<Company>/<Role>/PDF/`, `DOCX/` and `sources/`. Currently contains guidance only; no tailored résumé has been created.
 
 ## Update both versions
 Changes are **manual and reviewed**, not automatically synchronized from GitHub, LinkedIn or one résumé to the other.
@@ -35,8 +36,8 @@ Changes are **manual and reviewed**, not automatically synchronized from GitHub,
    python sources/generate_resume.py
    python sources/generate_single_page_resume.py
    ```
-   Each generator writes its matching DOCX into `docx/`. The generators do **not** produce PDF or TXT.
-3. Inspect each DOCX in Word or LibreOffice, then export PDF into `pdf/` with the matching base filename. Update its `text/` copy to match. Direct Word edits must also be reflected in the generator, or a rebuild will overwrite them.
+   Each generator writes its matching DOCX into `Resume/DOCX/`. The generators do **not** produce PDF or TXT.
+3. Inspect each DOCX in Word or LibreOffice, then export PDF into `Resume/PDF/` with the matching base filename. Update its `Resume/Text/` copy to match. Direct Word edits must also be reflected in the generator, or a rebuild will overwrite them.
 4. Check both rendered PDFs: main should remain two readable pages and single-page should remain one; verify every hyperlink, dates, text extraction and page breaks. Keep private repository links labeled, protect confidential information and distinguish prototypes or planned work from completed achievements.
 5. Commit both affected document sets and their sources together. When changing the snapshot month, update visible dates, filenames, generator output names and README download links together.
 
@@ -46,9 +47,9 @@ For a new project, add verified evidence and a concise contribution to the compr
 Use **both** maintained versions: the comprehensive résumé supplies the broader evidence and skills, while the general one-page résumé supplies the concise layout and strongest examples.
 
 1. Read the job description and select only relevant, supported experience from the comprehensive version.
-2. Work from a separate local copy of the one-page source; choose a distinct output filename before running it so neither canonical DOCX is overwritten.
+2. Work from a separate copy of the one-page source; change its output path and filename to the target company's `Tailored Resume/<Company>/<Role>/DOCX/` folder before running it so neither canonical DOCX is overwritten.
 3. Adjust ordering, summary and project selection honestly. Do not invent experience, qualifications, results or skills to match keywords.
-4. Export and verify that application-specific copy separately. Keep these two canonical versions intact; do not commit extra résumé versions here unless explicitly requested.
+4. When a company-specific version is requested, save it under `Tailored Resume/<Company>/<Role>/`, with `PDF/`, `DOCX/` and `sources/` subfolders (and a short README describing the role and date). Export and verify it separately. Keep exactly these two canonical versions under `Resume/PDF/` and `Resume/DOCX/`; never overwrite them with a company-specific copy.
 
 This guide describes a manual workflow. It does not schedule updates, create tailored copies automatically or submit applications.
 
