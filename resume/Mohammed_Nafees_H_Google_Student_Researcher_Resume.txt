@@ -1,0 +1,44 @@
+Mohammed Nafees H  |  November 2026  |  1
+MOHAMMED NAFEES H
+Robotics and AI Engineering Student | Robot Software | Embedded Systems | Computer Vision
+Kumbakonam, Tamil Nadu, India  |  +91 9629461267  |  mohammednafees1007@gmail.com
+GitHub portfolio  |  LinkedIn profile  |  As of November 2026
+EDUCATION
+SASTRA Deemed University | B.Tech in Robotics and Artificial Intelligence
+August 2024 - May 2028 (expected) | Tamil Nadu, India
+Relevant coursework: Introduction to Artificial Intelligence; Computational Methods for AI & Automation; Sensors & 
+Actuators for Robotics; Machine Learning Systems; Robotics Actuation & Power Drive Technologies; Systems Design; 
+Introduction to Robotics.
+ROBOTICS CLUB MEMBER | SASTRA DEEMED UNIVERSITY
+TECHNICAL SKILLS
+Programming and development: Python, C/C++, Linux shell scripting, Git, VS Code, Linux/Ubuntu 24.04.
+Robotics and controls: ROS 2 workflows, A* path planning, frontier exploration, inverse kinematics, motor control, 
+robot integration, CoppeliaSim.
+Computer vision and ML: OpenCV, PyTorch, TensorFlow/Keras, YOLOv8/Ultralytics, MobileNetV2, CLIP, BLIP, Hugging 
+Face Transformers, FastAPI.
+Embedded platforms: Arduino, Raspberry Pi, Pi Camera, GPIO, motor drivers, wheel encoders, IR sensors.
+Engineering practice: Hardware bring-up, sensor debugging, component evaluation, integration testing.
+ENGINEERING EXPERIENCE
+Hardware Software Specialist | Confidential Industrial Robotics Project
+March 2026 - Present | Part-time | Thanjavur, Tamil Nadu
+• Contribute to ROS 2 workflows, controls-oriented development, embedded integration, and hardware-software 
+coordination under NDA constraints.
+• Support sensor and actuator identification, component evaluation, procurement planning, and integration 
+debugging across software, electronics, and mechanical constraints.
+ROBOTICS AND COMPUTER VISION PROJECTS
+Hadi Al Hajatron  |  View project
+Python, Arduino, Tkinter, pyserial | January - May 2026
+• Designed and developed a physical 4×4 grid-navigation robot with three directional IR sensors, wheel-encoder 
+feedback, calibrated 60 cm movement steps, and 90° turns.
+• Implemented frontier exploration, A* route planning, live mapping, JSON map export, and serial commands linking 
+the Python interface to motor-control firmware.
+FruitVision AI  |  View project
+YOLOv8x, MobileNetV2, TensorFlow/Keras, CLIP, FastAPI
+• Built a visual fruit-quality grading prototype combining fruit-region detection, three-class classification, fruit 
+naming, annotated results, and A/B/C grade output.
+• Recorded 76.8% test accuracy and 0.765 macro-F1 on 336 held-out images; implemented augmentation, 
+checkpoint selection, and per-class evaluation. Evaluates visual freshness and damage.
+AI Image Analyzer  |  View project
+Python, YOLOv8n, OpenCV, BLIP | December 2025 - January 2026
+• Built the Visage image-analysis backend combining 13-class object filtering, face localization with non-identifying 
+per-image tokens, scene captions, and structured JSON output.
