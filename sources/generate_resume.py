@@ -47,7 +47,7 @@ for label,body in [
  ('Engineering tools and lab','Fusion 360, EasyEDA/KiCad basics, schematic reading, soldering, wiring, hardware bring-up, component evaluation and procurement coordination.')]:
  x=p();x.add_run(label+': ').bold=True;x.add_run(body)
 head('ENGINEERING EXPERIENCE')
-p('Hardware Software Specialist | Confidential Industrial Robotics Project',True)
+x=p(); link(x,'Hardware Software Specialist | Confidential Industrial Robotics Project','https://www.linkedin.com/feed/update/urn:li:activity:7444209303684640768/')
 p('March 2026 - Present | Part-time | Thanjavur, Tamil Nadu')
 bullet('Contribute to ROS 2 workflows, controls-oriented development, embedded integration, and hardware-software coordination under NDA constraints.')
 bullet('Support sensor and actuator identification, component evaluation, procurement planning, and integration debugging across software, electronics, and mechanical constraints.')
@@ -84,4 +84,6 @@ r=footer.add_run('Mohammed Nafees H  |  November 2026  |  ');r.font.size=Pt(8);r
 f=OxmlElement('w:fldSimple');f.set(qn('w:instr'),'PAGE');footer._p.append(f)
 D.core_properties.title='Mohammed Nafees H Robotics and AI Resume';D.core_properties.author='Mohammed Nafees H'
 from pathlib import Path
-D.save(Path(__file__).resolve().parent / 'Mohammed_Nafees_H_Resume_November_2026.docx')
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / 'docx'
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+D.save(OUTPUT_DIR / 'Mohammed_Nafees_H_Resume_November_2026.docx')

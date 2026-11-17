@@ -63,6 +63,8 @@ bullet('Built the Visage image-analysis backend combining 13-class object filter
 footer=sec.footer.paragraphs[0];footer.alignment=WD_ALIGN_PARAGRAPH.RIGHT
 r=footer.add_run('Mohammed Nafees H  |  November 2026  |  ');r.font.size=Pt(8);r.font.color.rgb=RGBColor.from_string('6B7780')
 f=OxmlElement('w:fldSimple');f.set(qn('w:instr'),'PAGE');footer._p.append(f)
-D.core_properties.title='Mohammed Nafees H Robotics and AI Resume';D.core_properties.author='Mohammed Nafees H'
+D.core_properties.title='Mohammed Nafees Resume November 2026 Single Page';D.core_properties.author='Mohammed Nafees H'
 from pathlib import Path
-D.save(Path(__file__).resolve().parent / 'Mohammed_Nafees_H_Google_Student_Researcher_Resume.docx')
+OUTPUT_DIR = Path(__file__).resolve().parent.parent / 'docx'
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+D.save(OUTPUT_DIR / 'Mohammed Nafees Resume November 2026 Single Page.docx')

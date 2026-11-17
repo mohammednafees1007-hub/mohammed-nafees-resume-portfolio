@@ -2,58 +2,62 @@
 
 _As of November 2026_
 
-Canonical résumé repository for Mohammed Nafees H, a Robotics and Artificial Intelligence undergraduate at SASTRA Deemed University.
+This repository maintains **exactly two résumé versions**: a comprehensive main résumé and a general one-page résumé. The one-page version is not specific to Google or any other employer.
 
-## Résumé versions
+## Download
 
-### Version 1: Google Student Researcher
-Focused one-page version featuring Hadi Al Hajatron, FruitVision AI and AI Image Analyzer.
-- [Download targeted PDF](resume/Mohammed_Nafees_H_Google_Student_Researcher_Resume.pdf)
-- [Download editable targeted Word document](resume/Mohammed_Nafees_H_Google_Student_Researcher_Resume.docx)
-- [Read targeted plain-text version](resume/Mohammed_Nafees_H_Google_Student_Researcher_Resume.txt)
-- [Targeted Word-document generator](resume/generate_gsr_resume.py)
-- The experience heading links to this [LinkedIn experience post](https://www.linkedin.com/feed/update/urn:li:activity:7444209303684640768/).
+| Version | PDF | Editable Word | Plain text |
+| --- | --- | --- | --- |
+| Main comprehensive · 2 pages | [PDF](pdf/Mohammed_Nafees_H_Resume_November_2026.pdf) | [DOCX](docx/Mohammed_Nafees_H_Resume_November_2026.docx) | [TXT](text/Mohammed_Nafees_H_Resume_November_2026.txt) |
+| General single page · 1 page | [PDF](pdf/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.pdf) | [DOCX](docx/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.docx) | [TXT](text/Mohammed%20Nafees%20Resume%20November%202026%20Single%20Page.txt) |
 
-This is a tailored résumé document, not a submitted application. A second targeted version has not been specified or created.
+Both versions link the industrial experience heading to the [LinkedIn experience post](https://www.linkedin.com/feed/update/urn:li:activity:7444209303684640768/). Industrial descriptions remain non-proprietary.
 
-### Comprehensive November 2026 résumé
-Preserved as the broader project and experience version.
-- [Download PDF](resume/Mohammed_Nafees_H_Resume_November_2026.pdf)
-- [Download editable Word document](resume/Mohammed_Nafees_H_Resume_November_2026.docx)
-- [Read plain-text version](resume/Mohammed_Nafees_H_Resume_November_2026.txt)
+## Layout
+- `pdf/`: two finished PDFs.
+- `docx/`: two editable Word documents.
+- `text/`: matching text versions.
+- `sources/generate_resume.py`: comprehensive Word-document source.
+- `sources/generate_single_page_resume.py`: general one-page Word-document source.
+- `requirements.txt`: Python dependency.
 
-The résumé highlights robotics software, embedded systems, computer vision, **Robotics Club involvement at SASTRA**, and confidential industrial experience described without proprietary details.
+## Update both versions
+Changes are **manual and reviewed**, not automatically synchronized from GitHub, LinkedIn or one résumé to the other.
 
-## Project evidence
-- [Hadi Al Hajatron](https://github.com/mohammednafees1007-hub/Hadi-Al-Hajatron)
-- [FruitVision AI](https://github.com/mohammednafees1007-hub/fruit-quality-detector-for-sms)
-- [AI Image Analyzer](https://github.com/mohammednafees1007-hub/ai-image-analyzer)
-- Quadruped RCS and Driver Fatigue AI: private repositories; résumé links require authorized access.
-- Cyber Lift V1 and Autonomous Plowing Robot: background on [LinkedIn](https://www.linkedin.com/in/mohammed-nafees-h).
-
-[GitHub profile](https://github.com/mohammednafees1007-hub) · [LinkedIn profile](https://www.linkedin.com/in/mohammed-nafees-h)
-
-## Updating this résumé
-Updates are **manual and reviewed**, not automatically synchronized from GitHub or LinkedIn.
-
-1. Edit the content and formatting in the source for the version you want to update: [resume/generate_resume.py](resume/generate_resume.py) for the comprehensive résumé or [resume/generate_gsr_resume.py](resume/generate_gsr_resume.py) for Version 1 (Google Student Researcher). These are the reproducible Word-document sources. Keep project names, dates, accomplishments, evidence links and status accurate. Do not turn planned work into completed achievements or disclose confidential details.
-2. Set up Python and generate the DOCX:
+1. Update the relevant Python source under `sources/`. Its content and formatting generate the corresponding Word document. Review shared facts in **both** sources when contact information, education, coursework, experience, dates or accomplishments change.
+2. Install dependencies and rebuild:
    ```sh
    python -m venv .venv
    # Linux/macOS:
    . .venv/bin/activate
    # Windows PowerShell instead: .venv\Scripts\Activate.ps1
    python -m pip install -r requirements.txt
-   python resume/generate_resume.py
-   # Or build the focused Google Student Researcher version:
-   python resume/generate_gsr_resume.py
+   python sources/generate_resume.py
+   python sources/generate_single_page_resume.py
    ```
-3. Open the generated DOCX in Word or LibreOffice, inspect every page and export it as PDF using the matching filename. Each Python script generates its own **DOCX only**, not PDF or TXT.
-4. Update the plain-text version to match the final résumé. Editing DOCX directly is supported, but also reflect those edits in the generator or the next build will overwrite them.
-5. Verify PDF layout, text, page breaks and clickable links. Check that private links are labeled and that no confidential information has been added.
-6. Commit the relevant generator, DOCX, PDF and TXT together. Review shared facts across both versions when updating education, contact details or experience; the two generators do not synchronize automatically. When the snapshot month changes, update the visible date, filenames, generator output filename and these download links together.
+   Each generator writes its matching DOCX into `docx/`. The generators do **not** produce PDF or TXT.
+3. Inspect each DOCX in Word or LibreOffice, then export PDF into `pdf/` with the matching base filename. Update its `text/` copy to match. Direct Word edits must also be reflected in the generator, or a rebuild will overwrite them.
+4. Check both rendered PDFs: main should remain two readable pages and single-page should remain one; verify every hyperlink, dates, text extraction and page breaks. Keep private repository links labeled, protect confidential information and distinguish prototypes or planned work from completed achievements.
+5. Commit both affected document sets and their sources together. When changing the snapshot month, update visible dates, filenames, generator output names and README download links together.
 
-For a new project, add a concise evidence-backed entry and its public repository URL to the generator and this README, then rebuild and check all versions. Do not make private repositories public merely to enable a résumé link.
+For a new project, add verified evidence and a concise contribution to the comprehensive source. Include it in the one-page source only if it is stronger or more relevant than an existing project; keep that version selective rather than adding pages.
 
-## Repository history
-The June 2026 résumé files and older generators have been removed from the current branch and replaced by this November 2026 version. Earlier versions remain recoverable through Git commit history. GitHub Pages is not used.
+## Derive a future job-tailored copy
+Use **both** maintained versions: the comprehensive résumé supplies the broader evidence and skills, while the general one-page résumé supplies the concise layout and strongest examples.
+
+1. Read the job description and select only relevant, supported experience from the comprehensive version.
+2. Work from a separate local copy of the one-page source; choose a distinct output filename before running it so neither canonical DOCX is overwritten.
+3. Adjust ordering, summary and project selection honestly. Do not invent experience, qualifications, results or skills to match keywords.
+4. Export and verify that application-specific copy separately. Keep these two canonical versions intact; do not commit extra résumé versions here unless explicitly requested.
+
+This guide describes a manual workflow. It does not schedule updates, create tailored copies automatically or submit applications.
+
+## Evidence and profiles
+- [Hadi Al Hajatron](https://github.com/mohammednafees1007-hub/Hadi-Al-Hajatron)
+- [FruitVision AI](https://github.com/mohammednafees1007-hub/fruit-quality-detector-for-sms)
+- [AI Image Analyzer](https://github.com/mohammednafees1007-hub/ai-image-analyzer)
+- Quadruped RCS and Driver Fatigue AI links in the main résumé require authorized access to private repositories; no visibility changes are implied.
+- [LinkedIn profile](https://www.linkedin.com/in/mohammed-nafees-h) · [GitHub profile](https://github.com/mohammednafees1007-hub)
+
+## History
+Superseded June documents, flat-folder November documents and the earlier Google-specific variant are removed from the current branch. They remain recoverable through Git history. No unrelated project repositories were removed. GitHub Pages is not used.
