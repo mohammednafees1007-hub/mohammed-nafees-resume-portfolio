@@ -25,7 +25,7 @@ March 2026 - Present | Part-time | Thanjavur, Tamil Nadu
 coordination under NDA constraints.
 • Support sensor and actuator identification, component evaluation, procurement planning, and integration 
 debugging across software, electronics, and mechanical constraints.
-ROBOTICS AND COMPUTER VISION PROJECTS
+ROBOTICS PROJECTS
 Hadi Al Hajatron  |  View project
 Python, Arduino, Tkinter, pyserial | January - May 2026
 • Designed and developed a physical 4×4 grid-navigation robot with three directional IR sensors, wheel-encoder 

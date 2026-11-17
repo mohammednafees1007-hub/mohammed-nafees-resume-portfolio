@@ -51,7 +51,7 @@ bullet('Contribute to ROS 2 workflows, controls-oriented development, embedded i
 bullet('Support sensor and actuator identification, component evaluation, procurement planning, and integration debugging across software, electronics, and mechanical constraints.')
 
 
-head('ROBOTICS AND COMPUTER VISION PROJECTS')
+head('ROBOTICS PROJECTS')
 project('Hadi Al Hajatron','Python, Arduino, Tkinter, pyserial | January - May 2026','https://github.com/mohammednafees1007-hub/Hadi-Al-Hajatron')
 bullet('Designed and developed a physical 4×4 grid-navigation robot with three directional IR sensors, wheel-encoder feedback, calibrated 60 cm movement steps, and 90° turns.')
 bullet('Implemented frontier exploration, A* route planning, live mapping, JSON map export, and serial commands linking the Python interface to motor-control firmware.')

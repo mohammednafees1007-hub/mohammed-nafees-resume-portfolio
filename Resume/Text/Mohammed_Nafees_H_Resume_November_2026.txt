@@ -43,7 +43,7 @@ in Linux-based robotics environments.
 
 Mohammed Nafees H  |  November 2026  |  2
 MOHAMMED NAFEES H  |  PROJECT PORTFOLIO
-ROBOTICS AND COMPUTER VISION PROJECTS
+ROBOTICS PROJECTS
 Hadi Al Hajatron  |  View project
 Python, Arduino, Tkinter, pyserial | January - May 2026
 • Designed and developed a physical 4×4 grid-navigation robot with three directional IR sensors, wheel-encoder 

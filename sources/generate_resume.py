@@ -59,7 +59,7 @@ bullet('Build and test across software, electronics, and mechanical integration,
 bullet('Debug from observed failure states through hardware bring-up, sensor checks, and rapid prototype iteration in Linux-based robotics environments.')
 D.add_page_break()
 x=p('MOHAMMED NAFEES H  |  PROJECT PORTFOLIO',True);x.runs[0].font.size=Pt(14)
-head('ROBOTICS AND COMPUTER VISION PROJECTS')
+head('ROBOTICS PROJECTS')
 project('Hadi Al Hajatron','Python, Arduino, Tkinter, pyserial | January - May 2026','https://github.com/mohammednafees1007-hub/Hadi-Al-Hajatron')
 bullet('Designed and developed a physical 4×4 grid-navigation robot with three directional IR sensors, wheel-encoder feedback, calibrated 60 cm movement steps, and 90° turns.')
 bullet('Implemented frontier exploration, A* route planning, live mapping, JSON map export, and serial commands linking the Python interface to motor-control firmware.')
