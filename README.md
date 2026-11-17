@@ -2,7 +2,7 @@
 
 _As of November 2026_
 
-This repository maintains **exactly two résumé versions**: a comprehensive main résumé and a general one-page résumé. The one-page version is not specific to Google or any other employer.
+This repository maintains **exactly two canonical résumé versions**: a comprehensive main résumé and a general one-page résumé. The one-page version is not specific to Google or any other employer.
 
 ## Download
 
@@ -13,6 +13,11 @@ This repository maintains **exactly two résumé versions**: a comprehensive mai
 
 Both versions link the industrial experience heading to the [LinkedIn experience post](https://www.linkedin.com/feed/update/urn:li:activity:7444209303684640768/). Industrial descriptions remain non-proprietary.
 
+## Company-specific copy
+
+- [Google · Student Researcher 2027](Tailored%20Resume/Google/Student%20Researcher%202027/README.md): [PDF](Tailored%20Resume/Google/Student%20Researcher%202027/PDF/Mohammed_Nafees_Google_Student_Researcher_2027.pdf) · [DOCX](Tailored%20Resume/Google/Student%20Researcher%202027/DOCX/Mohammed_Nafees_Google_Student_Researcher_2027.docx).
+- This tailored document is separate from the two canonical versions. Publishing it does not submit an application.
+
 ## Layout
 - `Resume/PDF/`: two finished PDFs.
 - `Resume/DOCX/`: two editable Word documents.
@@ -20,7 +25,7 @@ Both versions link the industrial experience heading to the [LinkedIn experience
 - `sources/generate_resume.py`: comprehensive Word-document source.
 - `sources/generate_single_page_resume.py`: general one-page Word-document source.
 - `requirements.txt`: Python dependency.
-- `Tailored Resume/`: future company-specific versions, organized as `<Company>/<Role>/PDF/`, `DOCX/` and `sources/`. Currently contains guidance only; no tailored résumé has been created.
+- `Tailored Resume/`: requested company-specific copies, organized as `<Company>/<Role>/PDF/`, `DOCX/`, `Text/` and `sources/`.
 
 ## Update both versions
 Changes are **manual and reviewed**, not automatically synchronized from GitHub, LinkedIn or one résumé to the other.
